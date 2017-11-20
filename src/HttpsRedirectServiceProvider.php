@@ -1,6 +1,6 @@
 <?php
 
-namespace AventureCloud\ForceHttps;
+namespace AventureCloud\HttpsRedirect;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -9,7 +9,7 @@ use Illuminate\Support\ServiceProvider;
  * 
  * @package AventureCloud\UserVerify
  */
-class HttpsServiceProvider extends ServiceProvider
+class HttpsRedirectServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -20,7 +20,7 @@ class HttpsServiceProvider extends ServiceProvider
     {
         // config
         $this->publishes([
-            __DIR__ . '/../config/force_https.php' => config_path('force_https.php')
+            __DIR__ . '/../config/https_redirect.php' => config_path('https_redirect.php')
         ], 'config');
     }
 	
@@ -33,12 +33,12 @@ class HttpsServiceProvider extends ServiceProvider
     {
         // configurations
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/force_https.php', 'force_https'
+            __DIR__ . '/../config/https_redirect.php', 'https_redirect'
         );
 
         //Bind service in IoC container
-        $this->app->singleton('HttpsService', function($app){
-            return new HttpsService(config('force_https'));
+        $this->app->singleton('HttpsRedirect', function($app){
+            return new HttpsRedirectService(config('https_redirect'));
         });
     }
 }

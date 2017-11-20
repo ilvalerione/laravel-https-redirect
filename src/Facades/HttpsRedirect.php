@@ -1,13 +1,13 @@
 <?php
 
-namespace AventureCloud\ForceHttps\Facades;
+namespace AventureCloud\HttpsRedirect\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class HttpsService extends Facade
+class HttpsRedirect extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'HttpsService';
+        return 'HttpsRedirect';
     }
 }

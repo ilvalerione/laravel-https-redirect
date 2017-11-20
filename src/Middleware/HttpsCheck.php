@@ -1,12 +1,12 @@
 <?php
 
-namespace AventureCloud\ForceHttps\Middleware;
+namespace AventureCloud\ForceHttps\HttpsRedirect;
 
 use Closure;
-use AventureCloud\ForceHttps\Facades\HttpsService;
+use AventureCloud\HttpsRedirect\Facades\HttpsRedirect;
 use Illuminate\Support\Facades\App;
 
-class Https
+class HttpsCheck
 {
     /**
      * Handle an incoming request.
@@ -17,7 +17,7 @@ class Https
      */
     public function handle($request, Closure $next)
     {
-        if (!$request->secure() && HttpsService::needRedirect(App::environment())) {
+        if (!$request->secure() && HttpsRedirect::needRedirect(App::environment())) {
             return redirect()->secure($request->getRequestUri());
         }
 
