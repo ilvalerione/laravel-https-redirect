@@ -1,11 +1,11 @@
-# Laravel Force https
+# Laravel https redirect
 Flexible https redirect for Laravel based applications
 
 ## Install
-``` composer require aventure-cloud/laravel-force-https ```
+``` composer require aventure-cloud/laravel-https-redirect ```
 
 ## Config
-``` php artisan vendor:publish --provider="AventureCloud\ForceHttps\HttpsServiceProvider" ```
+``` php artisan vendor:publish --provider="AventureCloud\HttpsRedirect\HttpsServiceProvider" ```
 
 This command publish a new configuration file in your `config` directory
 to list all environment names that you want force to https:
@@ -43,7 +43,7 @@ class Kernel extends HttpKernel
     protected $middleware = [
         ...,
         
-        \AventureCloud\ForceHttps\Middleware\Https::class,
+        \AventureCloud\HttpsRedirect\Middleware\HttpsCheck::class,
     ];
     
     ...
@@ -65,7 +65,7 @@ class Kernel extends HttpKernel
     protected $routeMiddleware  = [
         ...,
         
-        'force_https' => \AventureCloud\ForceHttps\Middleware\Https::class,
+        'force_https' => \AventureCloud\HttpsRedirect\Middleware\Https::class,
     ];
     
     ...
