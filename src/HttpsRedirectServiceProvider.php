@@ -7,12 +7,12 @@ use Illuminate\Support\ServiceProvider;
 /**
  * Class UserVerifyServiceProvider
  * 
- * @package AventureCloud\UserVerify
+ * @package AventureCloud\HttpsRedirect
  */
 class HttpsRedirectServiceProvider extends ServiceProvider
 {
     /**
-     * Perform post-registration booting of services.
+     * Booting of services.
      *
      * @return void
      */
