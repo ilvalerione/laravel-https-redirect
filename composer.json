@@ -1,5 +1,5 @@
 {
-    "name": "aventure-cloud/laravel-force-https",
+    "name": "aventure-cloud/laravel-https-redirect",
     "description": "Flexible https redirect for Laravel based applications",
     "keywords": ["laravel", "middleware", "https"],
     "license": "MIT",
