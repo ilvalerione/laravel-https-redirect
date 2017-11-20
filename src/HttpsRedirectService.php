@@ -1,9 +1,9 @@
 <?php
 
-namespace AventureCloud\ForceHttps;
+namespace AventureCloud\HttpsRedirect;
 
 
-class HttpsService
+class HttpsRedirectService
 {
     /**
      * @var mixed

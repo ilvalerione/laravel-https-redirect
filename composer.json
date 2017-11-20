@@ -15,13 +15,13 @@
     },
     "autoload": {
         "psr-4": {
-            "AventureCloud\\ForceHttps\\": "src/"
+            "AventureCloud\\HttpsRedirect\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "AventureCloud\\ForceHttps\\HttpsServiceProvider"
+                "AventureCloud\\HttpsRedirect\\HttpsServiceProvider"
             ]
         }
     }
