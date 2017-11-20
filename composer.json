@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AventureCloud\\HttpsRedirect\\HttpsServiceProvider"
+                "AventureCloud\\HttpsRedirect\\HttpsRedirectServiceProvider"
             ]
         }
     }
