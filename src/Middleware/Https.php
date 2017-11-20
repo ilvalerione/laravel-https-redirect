@@ -1,6 +1,6 @@
 <?php
 
-namespace AventureCloud\ForceHttps;
+namespace AventureCloud\ForceHttps\Middleware;
 
 use Closure;
 use HttpsService;
