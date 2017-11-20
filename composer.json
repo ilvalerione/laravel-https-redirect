@@ -17,5 +17,12 @@
         "psr-4": {
             "AventureCloud\\ForceHttps\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AventureCloud\\ForceHttps\\HttpsServiceProvider"
+            ]
+        }
     }
 }
