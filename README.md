@@ -1,4 +1,4 @@
-# Laravel Force https
+# Laravel https redirect
 Flexible https redirect for Laravel based applications
 
 ## Install
