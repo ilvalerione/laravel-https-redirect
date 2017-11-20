@@ -28,7 +28,7 @@ class HttpsService
      */
     public function needRedirect(string $env)
     {
-        if(is_string($this->config['environment']) && $this->config['environment'] === '*'){
+        if(is_string($this->config['environments']) && $this->config['environments'] === '*'){
             return true;
         }
 

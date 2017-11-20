@@ -3,7 +3,7 @@
 namespace AventureCloud\ForceHttps\Middleware;
 
 use Closure;
-use HttpsService;
+use AventureCloud\ForceHttps\Facades\HttpsService;
 use Illuminate\Support\Facades\App;
 
 class Https
