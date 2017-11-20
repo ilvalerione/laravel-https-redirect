@@ -65,7 +65,7 @@ class Kernel extends HttpKernel
     protected $routeMiddleware  = [
         ...,
         
-        'force_https' => \AventureCloud\HttpsRedirect\Middleware\HttpsCheck::class,
+        'https_redirect' => \AventureCloud\HttpsRedirect\Middleware\HttpsCheck::class,
     ];
     
     ...
@@ -73,7 +73,7 @@ class Kernel extends HttpKernel
 And use it programmatically in your routes configuration:
 
 ```php
-Route::middleware('force_https')->group(function(){
+Route::middleware('https_redirect')->group(function(){
 
     Route::view('example', 'example');
     
