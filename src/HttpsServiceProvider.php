@@ -1,6 +1,6 @@
 <?php
 
-namespace AventureCloud\UserVerify;
+namespace AventureCloud\ForceHttps;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -35,5 +35,10 @@ class HttpsServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__ . '/../config/force_https.php', 'force_https'
         );
+
+        //Bind service in IoC container
+        $this->app->singleton('HttpsService', function($app){
+            return new HttpsService(config('force_https'));
+        });
     }
 }

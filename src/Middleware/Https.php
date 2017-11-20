@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace AventureCloud\ForceHttps;
 
 use Closure;
+use HttpsService;
 use Illuminate\Support\Facades\App;
 
 class Https
@@ -16,7 +17,7 @@ class Https
      */
     public function handle($request, Closure $next)
     {
-        if (!$request->secure() && in_array(App::environment(), config('force_https.environments'))) {
+        if (!$request->secure() && HttpsService::needRedirect(App::environment())) {
             return redirect()->secure($request->getRequestUri());
         }
 
