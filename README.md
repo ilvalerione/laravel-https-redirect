@@ -20,12 +20,17 @@ return [
 ]
 ```
 
+Or you can force all passible environment using wildcard:
+```php
+return [
+    'environments' => '*'
+]
+```
 
-## Integrate
+## Use
 Add `HttpsMiddleware` middleware in your global middleware section:
 
 ```php
-
 class Kernel extends HttpKernel
 {
     /**
@@ -43,6 +48,38 @@ class Kernel extends HttpKernel
     
     ...
 ```
+
+## Use as Route-Middleware
+In alternative you can add middleware as named middleware in your Kernel file:
+
+```php
+class Kernel extends HttpKernel
+{
+    /**
+     * The application's global HTTP middleware stack.
+     *
+     * These middleware are run during every request to your application.
+     *
+     * @var array
+     */
+    protected $routeMiddleware  = [
+        ...,
+        
+        'force_https' => \AventureCloud\ForceHttps\Middleware\Https::class,
+    ];
+    
+    ...
+```
+And use it programmatically in your routes configuration:
+
+```php
+Route::middleware('force_https')->group(function(){
+
+    Route::view('example', 'example');
+    
+});
+```
+
 
 # LICENSE
 This package are licensed under the [MIT](LICENSE) license.
