@@ -1,6 +1,6 @@
 <?php
 
-namespace AventureCloud\HttpsRedirect\HttpsRedirect;
+namespace AventureCloud\HttpsRedirect\Middleware;
 
 use Closure;
 use AventureCloud\HttpsRedirect\Facades\HttpsRedirect;
