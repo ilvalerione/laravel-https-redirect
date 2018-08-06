@@ -1,4 +1,7 @@
 # Laravel https redirect
+
+[![Build Status](https://travis-ci.org/aventure-cloud/laravel-https-redirect.svg?branch=master)](https://travis-ci.org/aventure-cloud/laravel-https-redirect)
+
 Flexible https redirect for Laravel based applications
 
 ## Install
