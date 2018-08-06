@@ -21,11 +21,7 @@ class RedirectTest extends Orchestra
 
         config()->set('https_redirect.environments', '*');
 
-        Route::middleware(HttpsCheck::class)->get('_test', function () {
-            return response()->json([
-                'secure' => request()->secure()
-            ]);
-        });
+        $this->generateRoutes();
 
         $test = $this;
 
@@ -41,14 +37,34 @@ class RedirectTest extends Orchestra
         });
     }
 
+    protected function generateRoutes()
+    {
+        Route::middleware(HttpsCheck::class)->get('_test', function () {
+            return response()->json([
+                'secure' => request()->secure()
+            ]);
+        });
+    }
+
     /**
      * @test
      */
-    public function test_redirect_to_https()
+    public function test_do_redirect()
     {
         $this->get('_test')
             ->assertRedirect()
             ->followRedirects()
             ->assertJson(['secure' => true]);
+    }
+
+    /**
+     * @test
+     */
+    public function test_do_not_redirect()
+    {
+        config()->set('https_redirect.environments', ['production']);
+
+        $this->get('_test')
+            ->assertJson(['secure' => false]);
     }
 }

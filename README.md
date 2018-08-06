@@ -1,6 +1,9 @@
 # Laravel https redirect
 
 [![Build Status](https://travis-ci.org/aventure-cloud/laravel-https-redirect.svg?branch=master)](https://travis-ci.org/aventure-cloud/laravel-https-redirect)
+[![Latest Stable Version](https://poser.pugx.org/aventure-cloud/laravel-https-redirect/v/stable)](https://packagist.org/packages/aventure-cloud/laravel-https-redirect)
+[![Total Downloads](https://poser.pugx.org/aventure-cloud/laravel-https-redirect/downloads)](https://packagist.org/packages/aventure-cloud/laravel-https-redirect)
+[![License](https://poser.pugx.org/aventure-cloud/laravel-https-redirect/license)](https://packagist.org/packages/aventure-cloud/laravel-https-redirect)
 
 Flexible https redirect for Laravel based applications
 
