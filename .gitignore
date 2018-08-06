@@ -1,4 +1,3 @@
-phpunit.xml
 composer.phar
 composer.lock
 composer-test.lock
@@ -9,3 +8,4 @@ docs/_build
 docs/*.pyc
 .idea
 .DS_STORE
+*.cache

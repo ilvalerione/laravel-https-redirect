@@ -32,7 +32,11 @@ class HttpsRedirectService
             return true;
         }
 
-        if(in_array($env, $this->config['environments'])){
+        if(is_string($this->config['environments']) && $this->config['environments'] === $env){
+            return true;
+        }
+
+        if(is_array($this->config['environments']) && in_array($env, $this->config['environments'])){
             return true;
         }
 
