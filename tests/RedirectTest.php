@@ -62,8 +62,11 @@ class RedirectTest extends Orchestra
      */
     public function test_do_not_redirect()
     {
-        config()->set('https_redirect.environments', ['production']);
+        config()->set('https_redirect.environments', 'production');
+        $this->get('_test')
+            ->assertJson(['secure' => false]);
 
+        config()->set('https_redirect.environments', ['production']);
         $this->get('_test')
             ->assertJson(['secure' => false]);
     }
