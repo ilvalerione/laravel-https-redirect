@@ -11,15 +11,13 @@ return [
     |
     | supported:
     |   - '*' (star to always redirect)
-    |   - ['production'] (array of environment names)
+    |   - ['qa', 'production'] (array of environment names)
     |
     */
 
-    //'environments' => '*'
     'environments' => [
         // 'local', <-- usually no
-        'development',
-        'test',
+        'qa',
         'production',
     ]
 

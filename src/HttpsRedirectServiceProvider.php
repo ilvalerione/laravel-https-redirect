@@ -37,7 +37,7 @@ class HttpsRedirectServiceProvider extends ServiceProvider
         );
 
         //Bind service in IoC container
-        $this->app->singleton('HttpsRedirect', function($app){
+        $this->app->singleton(HttpsRedirectService::class, function(){
             return new HttpsRedirectService(config('https_redirect'));
         });
     }

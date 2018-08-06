@@ -13,9 +13,17 @@
         "php": ">=7.0.0",
         "illuminate/support": "5.*"
     },
+    "require-dev": {
+        "orchestra/testbench": "~3.0"
+    },
     "autoload": {
         "psr-4": {
             "AventureCloud\\HttpsRedirect\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
     "extra": {
@@ -24,5 +32,10 @@
                 "AventureCloud\\HttpsRedirect\\HttpsRedirectServiceProvider"
             ]
         }
-    }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
