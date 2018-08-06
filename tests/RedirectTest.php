@@ -2,12 +2,19 @@
 
 namespace Tests;
 
+use Orchestra\Testbench\TestCase as Orchestra;
+use AventureCloud\HttpsRedirect\HttpsRedirectServiceProvider;
 use AventureCloud\HttpsRedirect\Middleware\HttpsCheck;
 use Illuminate\Foundation\Testing\TestResponse;
 use Illuminate\Support\Facades\Route;
 
-class RedirectTest extends BaseTest
+class RedirectTest extends Orchestra
 {
+    protected function getPackageProviders($app)
+    {
+        return [HttpsRedirectServiceProvider::class];
+    }
+
     protected function setUp()
     {
         parent::setUp();
@@ -37,7 +44,7 @@ class RedirectTest extends BaseTest
     /**
      * @test
      */
-    public function it_passes_redirecting_to_https()
+    public function test_redirect_to_https()
     {
         $this->get('_test')
             ->assertRedirect()
