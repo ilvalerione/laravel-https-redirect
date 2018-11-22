@@ -6,8 +6,12 @@
 [![Total Downloads](https://poser.pugx.org/aventure-cloud/laravel-https-redirect/downloads)](https://packagist.org/packages/aventure-cloud/laravel-https-redirect)
 [![License](https://poser.pugx.org/aventure-cloud/laravel-https-redirect/license)](https://packagist.org/packages/aventure-cloud/laravel-https-redirect)
 
+- **Author:** Valerio Barbera - [support@gistmetrics.com](mailto:support@gistmetrics.com)
+- **Author Website:** [www.gistmetrics.com](target="_blank":https://www.gistmetrics.com) 
+
 
 Flexible https redirect for Laravel based applications
+
 
 ## Install
 ``` composer require aventure-cloud/laravel-https-redirect ```
