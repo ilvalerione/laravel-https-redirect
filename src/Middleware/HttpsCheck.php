@@ -1,9 +1,9 @@
 <?php
 
-namespace AventureCloud\HttpsRedirect\Middleware;
+namespace LogEngine\HttpsRedirect\Middleware;
 
 use Closure;
-use AventureCloud\HttpsRedirect\Facades\HttpsRedirect;
+use LogEngine\HttpsRedirect\Facades\HttpsRedirect;
 use Illuminate\Support\Facades\App;
 
 class HttpsCheck

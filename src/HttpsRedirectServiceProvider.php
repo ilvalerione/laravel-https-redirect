@@ -1,6 +1,6 @@
 <?php
 
-namespace AventureCloud\HttpsRedirect;
+namespace LogEngine\HttpsRedirect;
 
 use Illuminate\Support\ServiceProvider;
 

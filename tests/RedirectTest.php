@@ -3,8 +3,8 @@
 namespace Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use AventureCloud\HttpsRedirect\HttpsRedirectServiceProvider;
-use AventureCloud\HttpsRedirect\Middleware\HttpsCheck;
+use LogEngine\HttpsRedirect\HttpsRedirectServiceProvider;
+use LogEngine\HttpsRedirect\Middleware\HttpsCheck;
 use Illuminate\Foundation\Testing\TestResponse;
 use Illuminate\Support\Facades\Route;
 

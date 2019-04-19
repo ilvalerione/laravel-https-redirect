@@ -1,8 +1,8 @@
 <?php
 
-namespace AventureCloud\HttpsRedirect\Facades;
+namespace LogEngine\HttpsRedirect\Facades;
 
-use AventureCloud\HttpsRedirect\HttpsRedirectService;
+use LogEngine\HttpsRedirect\HttpsRedirectService;
 use Illuminate\Support\Facades\Facade;
 
 class HttpsRedirect extends Facade

@@ -1,12 +1,12 @@
 {
-    "name": "aventure-cloud/laravel-https-redirect",
+    "name": "log-engine/laravel-https-redirect",
     "description": "Flexible https redirect for Laravel based applications",
     "keywords": ["laravel", "middleware", "https"],
     "license": "MIT",
     "authors": [
         {
             "name": "Valerio Barbera",
-            "email": "valerio@aventuresrl.com"
+            "email": "support@logengine.dev"
         }
     ],
     "require": {
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AventureCloud\\HttpsRedirect\\": "src/"
+            "LogEngine\\HttpsRedirect\\": "src/"
         }
     },
     "autoload-dev": {
@@ -29,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AventureCloud\\HttpsRedirect\\HttpsRedirectServiceProvider"
+                "LogEngine\\HttpsRedirect\\HttpsRedirectServiceProvider"
             ]
         }
     },
