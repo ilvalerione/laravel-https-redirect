@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace LogEngine\HttpsRedirect\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 use LogEngine\HttpsRedirect\HttpsRedirectServiceProvider;
@@ -15,7 +15,7 @@ class RedirectTest extends Orchestra
         return [HttpsRedirectServiceProvider::class];
     }
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
