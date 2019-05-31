@@ -1,5 +1,5 @@
 {
-    "name": "log-engine/laravel-https-redirect",
+    "name": "ilvalerione/laravel-https-redirect",
     "description": "Flexible https redirect for Laravel based applications",
     "keywords": ["laravel", "middleware", "https"],
     "license": "MIT",
@@ -18,18 +18,18 @@
     },
     "autoload": {
         "psr-4": {
-            "LogEngine\\HttpsRedirect\\": "src/"
+            "Aventure\\HttpsRedirect\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "LogEngine\\HttpsRedirect\\Tests\\": "tests/"
+            "Aventure\\HttpsRedirect\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LogEngine\\HttpsRedirect\\HttpsRedirectServiceProvider"
+                "Aventure\\HttpsRedirect\\HttpsRedirectServiceProvider"
             ]
         }
     },

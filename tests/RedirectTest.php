@@ -1,10 +1,10 @@
 <?php
 
-namespace LogEngine\HttpsRedirect\Tests;
+namespace Aventure\HttpsRedirect\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use LogEngine\HttpsRedirect\HttpsRedirectServiceProvider;
-use LogEngine\HttpsRedirect\Middleware\HttpsCheck;
+use Aventure\HttpsRedirect\HttpsRedirectServiceProvider;
+use Aventure\HttpsRedirect\Middleware\HttpsCheck;
 use Illuminate\Foundation\Testing\TestResponse;
 use Illuminate\Support\Facades\Route;
 

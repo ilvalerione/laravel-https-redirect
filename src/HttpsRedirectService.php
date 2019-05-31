@@ -1,6 +1,6 @@
 <?php
 
-namespace LogEngine\HttpsRedirect;
+namespace Aventure\HttpsRedirect;
 
 
 class HttpsRedirectService

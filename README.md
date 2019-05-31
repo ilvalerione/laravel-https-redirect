@@ -1,22 +1,22 @@
 # Laravel https redirect
 
 
-[![Build Status](https://travis-ci.org/log-engine/laravel-https-redirect.svg?branch=master)](https://travis-ci.org/log-engine/laravel-https-redirect)
-[![Latest Stable Version](https://poser.pugx.org/log-engine/laravel-https-redirect/v/stable)](https://packagist.org/packages/log-engine/laravel-https-redirect)
-[![License](https://poser.pugx.org/log-engine/laravel-https-redirect/license)](https://packagist.org/packages/log-engine/laravel-https-redirect)
+[![Build Status](https://travis-ci.org/ilvalerione/laravel-https-redirect.svg?branch=master)](https://travis-ci.org/ilvalerione/laravel-https-redirect)
+[![Latest Stable Version](https://poser.pugx.org/ilvalerione/laravel-https-redirect/v/stable)](https://packagist.org/packages/ilvalerione/laravel-https-redirect)
+[![License](https://poser.pugx.org/ilvalerione/laravel-https-redirect/license)](https://packagist.org/packages/ilvalerione/laravel-https-redirect)
 
-- **Author:** Valerio Barbera - [support@logengine.dev](mailto:support@logengine.dev)
-- **Author Website:** [www.logengine.dev](target="_blank":https://www.logengine.dev) 
+- **Author:** Valerio Barbera - [valerio@aventuresrl.com](mailto:valerio@aventuresrl.com)
+- **Author Website:** [www.inspector.dev](target="_blank":https://www.inspector.dev) 
 
 
 Flexible https redirect for Laravel based applications
 
 
 ## Install
-``` composer require log-engine/laravel-https-redirect ```
+``` composer require ilvalerione/laravel-https-redirect ```
 
 ## Config
-``` php artisan vendor:publish --provider="LogEngine\HttpsRedirect\HttpsRedirectServiceProvider" ```
+``` php artisan vendor:publish --provider="Aventure\HttpsRedirect\HttpsRedirectServiceProvider" ```
 
 This command publish a new configuration file in your `config` directory
 to list all environment names that you want force to https:
@@ -54,7 +54,7 @@ class Kernel extends HttpKernel
     protected $middleware = [
         ...,
         
-        \LogEngine\HttpsRedirect\Middleware\HttpsCheck::class,
+        \Aventure\HttpsRedirect\Middleware\HttpsCheck::class,
     ];
     
     ...
@@ -76,7 +76,7 @@ class Kernel extends HttpKernel
     protected $routeMiddleware  = [
         ...,
         
-        'https_redirect' => \LogEngine\HttpsRedirect\Middleware\HttpsCheck::class,
+        'https_redirect' => \Aventure\HttpsRedirect\Middleware\HttpsCheck::class,
     ];
     
     ...
