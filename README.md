@@ -3,7 +3,6 @@
 
 [![Build Status](https://travis-ci.org/log-engine/laravel-https-redirect.svg?branch=master)](https://travis-ci.org/log-engine/laravel-https-redirect)
 [![Latest Stable Version](https://poser.pugx.org/log-engine/laravel-https-redirect/v/stable)](https://packagist.org/packages/log-engine/laravel-https-redirect)
-[![Total Downloads](https://poser.pugx.org/log-engine/laravel-https-redirect/downloads)](https://packagist.org/packages/log-engine/laravel-https-redirect)
 [![License](https://poser.pugx.org/log-engine/laravel-https-redirect/license)](https://packagist.org/packages/log-engine/laravel-https-redirect)
 
 - **Author:** Valerio Barbera - [support@logengine.dev](mailto:support@logengine.dev)
